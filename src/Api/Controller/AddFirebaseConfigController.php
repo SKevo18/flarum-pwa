@@ -100,7 +100,7 @@ class AddFirebaseConfigController extends AbstractCreateController
         }
 
         if (! empty($missingFields)) {
-            throw new InvalidParameterException('The Firebase config is missing required fields: ' . implode(', ', $missingFields));
+            throw new InvalidParameterException('The Firebase config is missing required fields: '.implode(', ', $missingFields));
         }
     }
 }
